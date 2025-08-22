@@ -27,13 +27,13 @@ It provides an easy-to-use interface for users to browse movies, book tickets, a
 
 ### Homepage
 ![Homepage](homepage.png)
-![Homepage](screenshots/homepage1.png)
+![Homepage](homepage1.png)
 
 ### Booking Page
-![Booking Page](screenshots/booking.png)
+![Booking Page](booking.png)
 
 ### Streaming Page
-![Streaming Page](screenshots/streaming.png)
+![Streaming Page](streaming.png)
 
 ---
 
