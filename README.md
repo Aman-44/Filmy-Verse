@@ -26,7 +26,7 @@ It provides an easy-to-use interface for users to browse movies, book tickets, a
 ## 📸 Screenshots
 
 ### Homepage
-![Homepage](screenshots/homepage.png)
+![Homepage](Screenshot 2025-08-22 221020.png)
 
 ### Booking Page
 ![Booking Page](screenshots/booking.png)
