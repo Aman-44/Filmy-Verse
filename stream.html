@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream your movies</title>
+    <style>
+         table {
+            margin-top: 0%;
+            padding-top: 0%;
+        }
+
+        td input {
+            border-radius: 12px;
+        }
+
+        .container {
+            width: 100%;
+        }
+
+        .box {
+            display: flex;
+            background-color: antiquewhite;
+        }
+
+        .box p {
+            color: black;
+        }
+
+        .box a {
+            text-decoration: none;
+        }
+
+        video {
+            width: 100%;
+            height:auto;
+        }
+
+        @media only screen and (max-width: 800px) {
+  .box {
+     flex-direction: column;
+      align-items: center;
+  }
+  .container {
+    max-width: fit-content;
+  }
+  .content {
+    max-width: fit-content;
+  }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table bgcolor="black" width="100%" height="80px">
+            <tr rolspan="2">
+                <td
+                    style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: bolder;font-size: 25px;color: white;">
+                    Filmy Verse</td>
+                <td width="800px"><input type="text" placeholder="Search for Movies..."
+                        style="width: 95%; height:25px;padding-left: 30px;"> </td>
+                <td style="padding-left: 30px;"><button style="width: 80px;"><a href="login.html" style="color:black"
+                            title="Sign in">Sign in</a></button></td>
+                <td style="padding-left: 15px;"><a href="#" title="Know more About Filmy Verse"
+                        style="color:azure">About Us</a></td>
+            </tr>
+            <tr>
+                <td style="font-family:sans-serif; font-weight: bold; font-size: 13px;color: white;">Movies
+                    Await,Ticket's in seconds</td>
+            </tr>
+        </table>
+        <div class="box">
+            <a href="index1.html">
+                <p>Home</p>
+            </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">
+                <p>Movies</p>
+            </a> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="">
+                <p>Stream</p>
+            </a>
+        </div>
+    </div>
+    <div  class="content">
+        <video type="mp4" controls>
+            <source src="Inception 2010.mkv"></source>
+        </video>
+    </div>
+</body>
+</html>

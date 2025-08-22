@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sing up</title>
+    <script>
+		function validate()
+		{
+			var x = document.getElementById("mail").value;
+			var atpos = x.indexOf("@");
+			var dotpos = x.lastIndexOf(".");
+			if(atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+			{
+				alert("Enter valid e-mail address");
+				return false;
+			}
+			else
+				return true;
+        }
+		function contact()
+		{
+				var regex=/^[0-9]*$/;
+				if(regex.test(document.getElementById("number").value))
+				{
+					return true;
+				}
+				else
+				{
+					alert("Enter only numbers");
+					return false;
+				}
+		}
+	</script>
+    <style>
+        div {
+            width: 100%;
+            padding-top: 100px;
+        }
+        body {
+            background-image: url(joker.jpg);
+            background-size: cover;
+        }
+        table {
+            color: rgb(189, 176, 176);
+            padding-left: 50px;
+        }
+        td input {
+            width: 300px;
+            opacity: 0.7;
+            border-radius: 5px;
+        }
+        @media only screen and (max-width : 800px) {
+            .container,.box {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form>
+        <table class="box">
+            <tr>
+                <td>Enter Username</td>
+            </tr>
+            <tr>
+                <td><input type="text" required></td>
+            </tr>
+            <tr>
+                <td>Enter Date Of Birth</td>
+            </tr>
+            <tr>
+                <td><input type="date" required></td>
+            </tr>
+            <tr>
+                <td>Enter Mobile number</td>
+            </tr>
+            <tr>
+                <td><input type="text" required minlength="10" maxlength="10" id="number" onblur="contact()"></td>
+            </tr>
+            <tr>
+                <td>Enter Email</td>
+            </tr>
+            <tr>
+                <td><input type="text" id="mail" required onblur="validate()"></td>
+            </tr>
+            <tr>
+                <td>Enter Password</td>
+            </tr>
+            <tr>
+                <td><input type="password" id="text"  maxlength="8"></td>
+            </tr>
+            <tr>
+                <td>Confirm Password</td>
+            </tr>
+            <tr>
+                <td><input type="password" required></td>
+            </tr></form>
+            <tr align="center">
+               <td><button style="width: 200px;opacity: 0.7;"><a href="login.html" style="color: black;text-decoration: none;">Register</a></button></td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

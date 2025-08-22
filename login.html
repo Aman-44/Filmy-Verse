@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+		function validate()
+		{
+			var x = document.getElementById("mail").value;
+			var atpos = x.indexOf("@");
+			var dotpos = x.lastIndexOf(".");
+			if(atpos<1 || dotpos<atpos+2 || dotpos+2>=x.length)
+			{
+				alert("Enter valid e-mail address");
+				return false;
+			}
+			else
+				return true;
+		}
+		</script>
+		<style>
+			body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(11.png);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.text {
+  width: 200px;
+  align-content: center;
+  padding-top: 200px;
+  padding-left: 10px;
+}
+@media only screen and (max-width: 800px) {
+    .text {
+     width: 100%;
+    }
+}
+</style>
+    <title>Login</title>
+</head>
+<body>
+  <center>
+    <form>
+    <div class="text"> 
+		<h2 style="color: gray; text-align: center;">Sign In</h2>
+        <input type="text" id="mail" placeholder="Email" required style="width: 100%; opacity: 0.5;"> <br>
+        <input type="password" id="pass" placeholder="Password" required maxlength="8" style="width: 100%; opacity: 0.5;"><br>
+        <a href="" style="font-size: 12px; float: right; color: white;">Forgot Password</a><br>
+		<a href="index1.html"><input type="button" value="sign In" onclick="validate()" style="width: 100%; opacity: 0.5;font-weight: bolder;"></a><br>
+       <p style="font-size: 12px; color: gray;">Don't Have account?<a href="Register.html" style="color: white;">Register</a></p>
+    </div>
+    </form>
+  </center>
+</body>
+</html>

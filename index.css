@@ -1,0 +1,70 @@
+* {
+  box-sizing: border-box;
+}
+
+table {
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+td input {
+  border-radius: 12px;
+}
+
+.container {
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  background-color:antiquewhite;
+}
+
+.box p {
+  color: black;
+}
+
+.box a {
+  text-decoration: none;
+}
+
+.details {
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 0%;
+  text-align: left;
+}
+
+.crack {
+  border: 2px solid gainsboro;
+  width: 220px;
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.crack img {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.movies {
+  display: flex;
+  flex-wrap: wrap;  
+  justify-content: space-around;
+}
+
+.footer {
+  background-color: black;
+  color: white;
+}
+
+@media only screen and (max-width: 600px) {
+  .box , .movies{
+     flex-direction: column;
+      align-items: center;
+  }
+  .container,.ticket,.crackk,.details {
+      width: 100%;
+  }
+}
