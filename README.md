@@ -40,9 +40,4 @@ It provides an easy-to-use interface for users to browse movies, book tickets, a
 ## 🚀 How to Run
 1. Download or clone this repository.  
 2. Open `index.html` in any browser.  
-3. Navigate between pages to explore features.  
-
----
-
-## 🤝 Contribution
-- Uploaded **Movie Ticket Booking & Online Streaming Frontend** project with README and screenshots.
+3. Navigate between pages to explore 
